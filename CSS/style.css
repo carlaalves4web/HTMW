@@ -1,0 +1,158 @@
+:root{
+    --blue-color: #1e90ff;
+    --blue-dark-color: #000058;
+    --white-color: #fff;
+    --red-color: #ff0000;
+    --text-color: #272727;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(0,0,0,0.8);
+}
+
+html {
+  font-family: 'Slabo 27px', serif;
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.welcome_italic{
+  font-size: 2.3vw;
+  font-style: italic;
+  font-weight: 500;
+  color: dimgrey;
+}
+
+.welcome{
+  font-size: 5vw;
+  font-family: 'Slabo 27px', sans-serif;
+  padding-top: 50px;
+}
+
+.htmw {
+  color: var(--blue-color);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.htmw:hover {
+  color: var(--blue-dark-color);
+  text-decoration: underline;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'header' 'main' 'footer';
+  row-gap: 50px;
+}
+.row{
+    width: 100%;
+}
+#header {
+  grid-area: header;
+  position: relative;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  top: 1rem;
+  margin-bottom: 0.5rem;
+  left: 15%;
+}
+
+#header img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 8px 8px rgba(255,255,255, 0.1);
+  margin-bottom: 25px;
+}
+
+#main {
+    grid-area: main;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    width: 90vw;
+    left: 5%;
+    border-radius: 9px;
+    align-self: center;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 25px;
+  margin-top: 1rem;
+  margin: auto;
+}
+.intro{
+    color: var(--text-color);
+}
+
+.mars{
+  font-size: 2rem;
+  color: var(--red-color);
+  padding-bottom: 25px;
+}
+
+.digiting{
+  display: grid;
+  width: 324px;
+  height: auto;
+}
+
+.typed{
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 3s steps(30, end) 2s forwards, blinking 1s infinite;
+}
+
+@keyframes typing{
+  from { width: 0;}
+  to { width: 100%;}
+}
+@keyframes blinking {
+  0% { border-right-color: #1e90ff;}
+  100% { border-right-color: transparent}
+}
+
+.footer{
+  background-color: transparent;
+}
+
+@media screen and (max-width:600px){
+
+  #header{
+    width: 80%;
+    left: 10%;
+  }
+  .italic{
+    font-size: 2.6vw;
+    font-style: italic;
+    color: dimgrey;
+  }
+  
+  .welcome{
+    font-size: 6.5vw;
+    font-family: 'Slabo 27px', sans-serif;
+    padding-top: 50px;
+  }
+}
