@@ -45,61 +45,82 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Navbar for large screen >= 1000px -->
+    <div class="d-flex flex-column" onscroll="myFunction()">
+          <!-- Navbar for large screen >= 1000px -->
     <div id="myNav">
-        <div class="logo">
-            <img src="images/view-001/logo.png" width="200" alt="" />
-        </div>
-        <div class="nav-link d-flex">
-            <ul>
-                <li class="nav-item">
-                  <a class="nav-link" href="#core">Core Languages</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#prod-list">Sample Product List</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-    <!-- main body -->
-    <div class="container d-flex flex-column">
-      <img class="pt-3 m-auto rounded-2 mb-5" src="images/view-001/logo.png" alt="" style="max-width: 70vw;"/>
-
-      <!--pocket sample 1-->
-      <!--html from a request-->
-      <div class="container d-flex ">
-        <h1 id="typing" style="color: #ff0000;"
-        class="mars-title pocket mb-3 px-5"
-        data-items="demo"
-        data-override-demo="/html/view-001/demo.html"
-      ></h1>
+      <div class="logo">
+          <img src="images/view-001/logo.png" width="200" alt="" />
       </div>
-      <!-- Item will be placed inside the tag and filled with data from this dataSource -->
+      <div class="nav-link d-flex">
+          <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#core">Core Languages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prod-list">Sample Product List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+      </div>
 
-      <!--pocket sample 2-->
-      <!--html from an item-->
-      <div class="pocket" data-items="frontend-html"></div>
-
-      <!--pocket sample 3-->
-      <!--html from an item w/data (static cloning)-->
-      <div class="pocket" data-items="sample"></div>
-
-      <!--pocket sample 4-->
-      <!--html from a request w/data (dynamic cloning)-->
-      <div
-        class="pocket"
-        data-items="democlone"
-        data-override-democlone="/html/view-001/democlone.bnw4.html"
-      ></div>
+    <!-- Sidebar for small/medium screen < 1000px  -->
+    <div id="Sidebar" class="sidebar" data-anime="sidebar">
+      <a href="#core" id="one" class="text-info opacity-50 tooltip"
+        ><i class="fa-solid fa-folder-tree"></i
+        ><span class="tooltiptext">Core Languages</span></a
+      >
+      <a href="#prod-list" id="two" class="text-info opacity-50 tooltip"
+        ><i class="fa-solid fa-list"></i
+        ><span class="tooltiptext">Sample Product it</span></a
+      >
+      <a href="#contact" id="three" class="text-info opacity-50 tooltip"
+        ><i class="fa-solid fa-envelope"></i
+        ><span class="tooltiptext">Contact Us</span></a
+      >
+      <a href="#follow" id="four" class="text-info opacity-50 tooltip"
+        ><i class="fa-solid fa-hashtag"></i
+        ><span class="tooltiptext">Follow Us</span></a
+      >
     </div>
+  <!-- main body -->
+  <div class="container d-flex flex-column">
+    <img class="pt-3 m-auto rounded-2 mb-5" src="images/view-001/logo.png" alt="" style="max-width: 70vw;"/>
 
-    <footer
-      class="footer mx-5 pocket"
-      data-items="footer"
-    ></footer>
+    <!--pocket sample 1-->
+    <!--html from a request-->
+    <div class="container d-flex ">
+      <h1 style="color: #ff0000;"
+      class="mars-title pocket mb-3 px-5 typing"
+      data-items="demo"
+      data-override-demo="/html/view-001/demo.html"
+    ></h1>
+    </div>
+    <!-- Item will be placed inside the tag and filled with data from this dataSource -->
+
+    <!--pocket sample 2-->
+    <!--html from an item-->
+    <div class="pocket" data-items="frontend-html"></div>
+
+    <!--pocket sample 3-->
+    <!--html from an item w/data (static cloning)-->
+    <div class="pocket" data-items="sample"></div>
+    <!--pocket sample 4-->
+    <!--html from a request w/data (dynamic cloning)-->
+    <div
+      class="pocket"
+      data-items="democlone"
+      data-override-democlone="/html/view-001/democlone.bnw4.html"
+    >
+  </div>
+  </div>
+  <footer
+    class="footer mx-5 pocket"
+    data-items="footer"
+  ></footer>
+    </div>
 
     <!-- END main body -->
 
@@ -169,7 +190,7 @@
         <section id="section-4" class="d-flex flex-column" style="background-color: aliceblue;">
         <div class="core">
             <div class="typing-wrapper">
-              <h1 id="typing" class="text-light title">
+              <h1 class="text-light title typing">
                 CORE Languages, Structures & Concepts
               </h1>
             </div>
@@ -206,7 +227,6 @@
                 </div>
               </div>
             </div>
-            <div id="prod-list"></div>
             <hr class="m-auto" />
           </div>
         </section>
