@@ -1,12 +1,23 @@
-<div class="container mt-5 mx-5"><h3>Sample Backend List (products)</h3></div>
-<div class="container p-5">
+
+<div class="container sample text-light">
+  <div class="anime-box">
+    <h1 class="sample-title typing">Sample Backend List (products)</h1>
+  </div>
+</div>
+<div class="container p-5" style="background-color: aliceblue">
   <p>
     This HTML is processed from a file found at
-    <a href="/html/view-001/democlone2.html" target="_blank"
+    <a
+      class="icon-link icon-link-hover"
+      style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
+      href="/html/view-001/democlone2.html"
+      target="_blank"
       >/html/view-001/democlone.html</a
     >. Then the cloned elements are rendered from a backend JSON request found
     at
     <a
+      class="icon-link icon-link-hover"
+      style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
       href="https://dummyjson.com/products?limit=8"
       target="_blank"
       rel="noopener"
@@ -14,20 +25,37 @@
     >.
   </p>
 </div>
-<div class="container border-bottom px-5">
-  <p>
+<div
+  class="container border-bottom border-bottom-primary px-5"
+  style="background-color: aliceblue"
+>
+  <p class="fs-5 border-bottom pb-3 fw-semibold" style="color: #6c757d">
     The following data is from JSON. It has been preloaded, reformatted and
     renamed to <span class="fst-italic">products</span> for proper framework
     consumption.
   </p>
 </div>
-<div class="container mt-2 px-5">
+<div
+  class="container mt-2 px-5 rounded-bottom-2"
+  style="background-color: aliceblue"
+>
   <div class="row row-cols gy-4 clone" data-data-source="products">
-    <div class="col-lg-3 col-md-6 col-sm-12">
-      <div class="card border-light rounded-2 shadow-sm h-100">
+    <div
+      class="col-lg-3 col-md-6 col-sm-12 mb-5"
+      style="background-color: aliceblue"
+    >
+      <div
+        class="card border-light rounded-2 shadow-sm h-100 prod-card"
+        style="background-color: aliceblue"
+      >
         <div
           class="item-image w-100 card-img-top m-0 p-0"
-          style="max-height: 40vh; object-fit: cover; overflow: hidden"
+          style="
+            max-height: 40vh;
+            object-fit: cover;
+            overflow: hidden;
+            background-color: aliceblue;
+          "
         >
           <img
             class="embed-responsive-item img-fluid flex-grow-1 rounded-top m-0"
@@ -35,7 +63,10 @@
             alt="{{rec:title}}"
           />
         </div>
-        <div class="card-body w-100 bg-white mb-0" style="max-height: 60vh">
+        <div
+          class="card-body w-100 mb-0"
+          style="max-height: 60vh; background-color: aliceblue"
+        >
           <div class="item-brand flex-row card-title fw-bold fs-6 p-0 m-0">
             <p class="card-title fw-semibold fs-6">
               <span class="item-order fw-semibold">#{{aug:index}}</span> -
